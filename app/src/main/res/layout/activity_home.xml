@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ActivityHome">
+
+    <TextView
+        style="@style/TextAppearance.MaterialComponents.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Pick the animation mode and click on the image displayed below to animate it"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/rgAnimationMode"
+        android:background="#f1f1f1">
+
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/rbAnimClockwise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clockwise" />
+
+        <RadioButton
+            android:id="@+id/rbAnimZoomIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zoom In" />
+
+        <RadioButton
+            android:id="@+id/rbAnimZoomOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zoom Out" />
+
+        <RadioButton
+            android:id="@+id/rbAnimFadeInOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fade In/Out" />
+
+        <RadioButton
+            android:id="@+id/rbAnimBlink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Blink" />
+
+        <RadioButton
+            android:id="@+id/rbAnimMove"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Move" />
+
+        <RadioButton
+            android:id="@+id/rbAnimSlide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Slide" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/myImageView"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_margin="50dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_flower" />
+
+</LinearLayout>
